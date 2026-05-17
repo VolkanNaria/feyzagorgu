@@ -783,13 +783,17 @@
     </div>
     <div class="hero-photo-wrap">
       <div class="hero-photo-frame">
-        <img
-          src="feyza.jpg"
-          alt="Feyza Görgü — ICF PCC Koç ve İK Danışmanı"
-          width="380"
-          height="480"
-          loading="eager"
-        />
+        <picture>
+          <source srcset="feyza.webp" type="image/webp" />
+          <img
+            src="feyza.jpg"
+            alt="Feyza Görgü — ICF PCC Liderlik Koçu ve İnsan Kaynakları Danışmanı, İstanbul"
+            width="380"
+            height="480"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
         <div class="hero-stat-card">
           <div class="stat-number">20+</div>
           <div class="stat-label">Yıl Kurumsal<br>İK Deneyimi</div>
@@ -808,32 +812,32 @@
     </p>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="Executive ve Liderlik Koçluğu ikonu">◈</div>
         <h3>Executive & Liderlik Koçluğu</h3>
         <p>CEO, yönetim kurulu üyeleri ve üst düzey yöneticilere birebir ICF standartlarında profesyonel koçluk. Liderlik stilinizi keşfedin, potansiyelinizi açığa çıkarın.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="İnsan Kaynakları Danışmanlığı ikonu">◈</div>
         <h3>İnsan Kaynakları Danışmanlığı</h3>
         <p>İK stratejisi, organizasyonel yapılanma, işe alım süreçleri, performans yönetimi ve M&A (birleşme-satın alma) süreçlerinde kurumsal danışmanlık.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="Yetenek Yönetimi ikonu">◈</div>
         <h3>Yetenek Yönetimi</h3>
         <p>Yedekleme sistemlerinin kurulması, gelişim planlamalarının hayata geçirilmesi ve kritik pozisyonlar için yetenek havuzunun oluşturulması.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="Kurumsal Eğitim Programları ikonu">◈</div>
         <h3>Kurumsal Eğitim Programları</h3>
         <p>Liderlik, iletişim, mülakat teknikleri, çevik liderlik ve koçvari yönetim stillerine yönelik kuruma özel tasarlanmış eğitim programları.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="Mentörlük Programları ikonu">◈</div>
         <h3>Mentörlük Programları</h3>
         <p>EMCC standartlarında bireysel ve grup mentörlüğü. Kariyer geçişleri, liderliğe hazırlık ve profesyonel gelişim süreçlerinde rehberlik.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">◈</div>
+        <div class="service-icon" role="img" aria-label="Verimlilik ve Dönüşüm Süreçleri ikonu">◈</div>
         <h3>Verimlilik & Dönüşüm Süreçleri</h3>
         <p>Organizasyonel yeniden yapılanma, verimlilik artırma ve işgücü optimizasyonu süreçlerinde insan odaklı danışmanlık ve süreç yönetimi.</p>
       </div>
