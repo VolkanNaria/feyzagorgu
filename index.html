@@ -773,7 +773,7 @@
       <h1>Feyza Görgü</h1>
       <p class="hero-subtitle">ICF PCC Liderlik Koçu · İK Danışmanı · Eğitmen | İstanbul</p>
       <p class="hero-desc">
-        20 yılı aşkın kurumsal İnsan Kaynakları yöneticiliği deneyimiyle edindiğim bilgi birikimini,
+        20+ yıl kurumsal İnsan Kaynakları yöneticiliği deneyimiyle edindiğim bilgi birikimini,
         ICF sertifikalı koçluk uzmanlığıyla birleştirerek İstanbul'daki ve Türkiye genelindeki
         liderlerinizin ve organizasyonunuzun dönüşümüne destek oluyorum.
         Yüz yüze ve online görüşme imkânı mevcuttur.
@@ -785,7 +785,8 @@
         <span class="cert-tag">Bilkent Üniv. Mezunu</span>
       </div>
       <div class="hero-actions">
-        <a href="#iletisim" class="btn-primary">Görüşme Talep Et</a>
+        <a href="#iletisim" class="btn-primary"
+           onclick="gtag('event', 'gorusme_talep', { 'event_category': 'buton', 'event_label': 'hero_gorusme_btn' })">Görüşme Talep Et</a>
         <a href="#hizmetler" class="btn-outline">Hizmetleri İncele</a>
       </div>
     </div>
@@ -987,13 +988,16 @@
         İlk görüşme ücretsizdir.
       </p>
       <div class="contact-links">
-        <a href="mailto:feyzagorgu@narina.com.tr" class="contact-link">
+        <a href="mailto:feyzagorgu@narina.com.tr" class="contact-link"
+           onclick="gtag('event', 'email_click', { 'event_category': 'iletisim', 'event_label': 'email_linki' })">
           ✉ feyzagorgu@narina.com.tr
         </a>
-        <a href="https://www.linkedin.com/in/feyzagorgu" target="_blank" rel="noopener" class="contact-link">
+        <a href="https://www.linkedin.com/in/feyzagorgu" target="_blank" rel="noopener" class="contact-link"
+           onclick="gtag('event', 'linkedin_click', { 'event_category': 'iletisim', 'event_label': 'linkedin_linki' })">
           in LinkedIn
         </a>
-        <a href="https://www.narina.com.tr" target="_blank" rel="noopener" class="contact-link">
+        <a href="https://www.narina.com.tr" target="_blank" rel="noopener" class="contact-link"
+           onclick="gtag('event', 'narina_click', { 'event_category': 'iletisim', 'event_label': 'narina_linki' })">
           ↗ Narina Akademi
         </a>
       </div>
@@ -1007,6 +1011,7 @@
     target="_blank"
     rel="noopener"
     aria-label="WhatsApp ile iletişime geçin"
+    onclick="gtag('event', 'whatsapp_click', { 'event_category': 'iletisim', 'event_label': 'whatsapp_butonu', 'value': 1 })"
   >
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -1033,6 +1038,107 @@
         if (!isOpen) item.classList.add('open');
         btn.setAttribute('aria-expanded', !isOpen);
       });
+    });
+  </script>
+
+  <!-- GA4 Event Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // 1. Görüşme Talep Et butonu
+      document.querySelectorAll('a[href="#iletisim"].btn-primary').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'gorusme_talep_et', {
+            event_category: 'donusum',
+            event_label: 'hero_butonu',
+            value: 1
+          });
+        });
+      });
+
+      // 2. Hizmetleri İncele butonu
+      document.querySelectorAll('a[href="#hizmetler"].btn-outline').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'hizmetleri_incele', {
+            event_category: 'navigasyon',
+            event_label: 'hero_butonu',
+            value: 1
+          });
+        });
+      });
+
+      // 3. Email tıklama
+      document.querySelectorAll('a[href^="mailto"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'email_click', {
+            event_category: 'iletisim',
+            event_label: el.href,
+            value: 1
+          });
+        });
+      });
+
+      // 4. LinkedIn tıklama
+      document.querySelectorAll('a[href*="linkedin"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'linkedin_click', {
+            event_category: 'sosyal_medya',
+            event_label: 'linkedin_profil',
+            value: 1
+          });
+        });
+      });
+
+      // 5. Narina.com.tr tıklama
+      document.querySelectorAll('a[href*="narina.com.tr"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'narina_click', {
+            event_category: 'dis_link',
+            event_label: 'narina_akademi',
+            value: 1
+          });
+        });
+      });
+
+      // 6. Telefon tıklama
+      document.querySelectorAll('a[href^="tel"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'telefon_click', {
+            event_category: 'iletisim',
+            event_label: el.href,
+            value: 1
+          });
+        });
+      });
+
+      // 7. SSS açılma
+      document.querySelectorAll('.faq-q').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var soru = btn.textContent.trim().substring(0, 50);
+          gtag('event', 'sss_acildi', {
+            event_category: 'icerik',
+            event_label: soru,
+            value: 1
+          });
+        });
+      });
+
+      // 8. Sayfa scroll derinliği (25, 50, 75, 100)
+      var scrollMarks = { 25: false, 50: false, 75: false, 100: false };
+      window.addEventListener('scroll', function() {
+        var scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        [25, 50, 75, 100].forEach(function(mark) {
+          if (scrollPct >= mark && !scrollMarks[mark]) {
+            scrollMarks[mark] = true;
+            gtag('event', 'scroll_derinligi', {
+              event_category: 'icerik',
+              event_label: mark + '%',
+              value: mark
+            });
+          }
+        });
+      });
+
     });
   </script>
 
