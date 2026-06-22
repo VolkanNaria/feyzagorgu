@@ -45,9 +45,25 @@
   <!-- İletişim -->
   <url>
     <loc>https://www.feyzagorgu.com.tr/#iletisim</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- SSS: Kültür Dönüşümü -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/sss/kultur-donusumu</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SSS: TURQUALITY -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/sss/turquality</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
