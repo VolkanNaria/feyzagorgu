@@ -15,6 +15,10 @@
   <link rel="canonical" href="https://www.feyzagorgu.com.tr/" />
   <link rel="llms" href="/llms.txt" type="text/plain" />
 
+  <!-- GA4 preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
   <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
@@ -1062,13 +1066,31 @@
     });
   </script>
 
-  <!-- Google Analytics — body sonunda yükle (LCP için) -->
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC"></script>
+  <!-- Google Analytics — kullanıcı etkileşimiyle yükle -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VFETVK3RXC');
+
+    var ga4Loaded = false;
+    function loadGA4() {
+      if (ga4Loaded) return;
+      ga4Loaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC';
+      s.async = true;
+      document.head.appendChild(s);
+      s.onload = function() {
+        gtag('js', new Date());
+        gtag('config', 'G-VFETVK3RXC');
+      };
+    }
+
+    // Scroll veya mouse hareketi ile yükle
+    window.addEventListener('scroll', loadGA4, { once: true });
+    window.addEventListener('mousemove', loadGA4, { once: true });
+    window.addEventListener('touchstart', loadGA4, { once: true });
+    // 5 saniye sonra yine de yükle (bot değilse)
+    setTimeout(loadGA4, 5000);
   </script>
 
   <!-- GA4 Event Tracking -->
