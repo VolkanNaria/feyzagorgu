@@ -14,14 +14,14 @@
   <meta name="google-site-verification" content="69zqB-iY18-uSfNK3SzlCD20_eHvs2LvaZmkLdXYL64" />
   <link rel="canonical" href="https://www.feyzagorgu.com.tr/" />
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC"></script>
+  <!-- Google Analytics — defer ile yükle -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-VFETVK3RXC');
   </script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC"></script>
 
   <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -245,7 +245,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" /></noscript>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -788,7 +789,8 @@
     <div class="hero-photo-wrap">
       <div class="hero-photo-frame">
         <picture>
-          <source srcset="feyza.webp" type="image/webp" />
+          <source media="(max-width: 768px)" srcset="feyza-mobile.webp" type="image/webp" width="490" height="653" />
+          <source srcset="feyza.webp" type="image/webp" width="760" height="960" />
           <img
             src="feyza.jpg"
             alt="Feyza Görgü — ICF PCC Liderlik Koçu ve İnsan Kaynakları Danışmanı, İstanbul"
