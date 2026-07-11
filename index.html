@@ -14,15 +14,6 @@
   <meta name="google-site-verification" content="69zqB-iY18-uSfNK3SzlCD20_eHvs2LvaZmkLdXYL64" />
   <link rel="canonical" href="https://www.feyzagorgu.com.tr/" />
 
-  <!-- Google Analytics — defer ile yükle -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VFETVK3RXC');
-  </script>
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC"></script>
-
   <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
@@ -1065,6 +1056,15 @@
         btn.setAttribute('aria-expanded', !isOpen);
       });
     });
+  </script>
+
+  <!-- Google Analytics — body sonunda yükle (LCP için) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-VFETVK3RXC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VFETVK3RXC');
   </script>
 
   <!-- GA4 Event Tracking -->
