@@ -654,6 +654,46 @@
       font-size: 0.95rem;
       color: var(--navy);
     }
+    .callout-actions {
+      display: flex; flex-wrap: wrap; gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .callout-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.65rem 1.3rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .callout-btn:hover { opacity: 0.88; }
+    .callout-btn-primary { background: var(--navy); color: #FAFAF8; }
+    .callout-btn-whatsapp { background: #25D366; color: #ffffff; }
+    .callout-btn-whatsapp svg { width: 16px; height: 16px; fill: #ffffff; }
+
+    /* İlgili Yazılar */
+    .related-posts {
+      margin: 3rem 0 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(26,46,69,0.08);
+    }
+    .related-posts h3 {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .related-posts-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .related-post-link {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.92rem;
+      display: flex; align-items: baseline; gap: 0.5rem;
+    }
+    .related-post-link::before { content: '→'; color: var(--gold); }
+    .related-post-link:hover { color: var(--gold); }
+
     .checklist-group {
       background: #FFFFFF;
       border: 1px solid rgba(26,46,69,0.08);
