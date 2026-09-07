@@ -66,4 +66,28 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog: Listeleme -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/blog/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: TURQUALITY IK Danismanligi -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/blog/turquality-ik-danismanligi</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Assessment Development Center -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/blog/assessment-development-center-nedir</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
