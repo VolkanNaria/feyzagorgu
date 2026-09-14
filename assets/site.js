@@ -4,16 +4,41 @@
 // yapmak için sadece /partials/header.html veya /partials/footer.html
 // dosyasını güncellemek yeterli — tüm sayfalara otomatik yansır.
 (function () {
-  function loadPartial(elId, url) {
+  function loadPartial(elId, url, onLoaded) {
     var el = document.getElementById(elId);
     if (!el) return;
     fetch(url)
       .then(function (r) { return r.text(); })
-      .then(function (html) { el.innerHTML = html; })
+      .then(function (html) {
+        el.innerHTML = html;
+        if (onLoaded) onLoaded();
+      })
       .catch(function (err) { console.error('Partial yüklenemedi:', url, err); });
   }
+
+  function initNavToggle() {
+    var toggle = document.getElementById('nav-toggle');
+    var links = document.getElementById('nav-links');
+    if (!toggle || !links) return;
+
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('nav-links-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-label', isOpen ? 'Menüyü kapat' : 'Menüyü aç');
+    });
+
+    // Bir linke tıklanınca menüyü otomatik kapat
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        links.classList.remove('nav-links-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Menüyü aç');
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
-    loadPartial('site-header', '/partials/header.html');
+    loadPartial('site-header', '/partials/header.html', initNavToggle);
     loadPartial('site-footer', '/partials/footer.html');
   });
 })();
