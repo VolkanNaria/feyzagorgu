@@ -10,46 +10,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Hizmetler -->
-  <url>
-    <loc>https://www.feyzagorgu.com.tr/#hizmetler</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Hakkımda -->
-  <url>
-    <loc>https://www.feyzagorgu.com.tr/#hakkimda</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Kimlerle Çalışıyorum -->
-  <url>
-    <loc>https://www.feyzagorgu.com.tr/#hedef</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- SSS -->
-  <url>
-    <loc>https://www.feyzagorgu.com.tr/#sss</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- İletişim -->
-  <url>
-    <loc>https://www.feyzagorgu.com.tr/#iletisim</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <!-- SSS: Kültür Dönüşümü -->
   <url>
     <loc>https://www.feyzagorgu.com.tr/sss/kultur-donusumu</loc>
