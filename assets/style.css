@@ -775,3 +775,17 @@
     @media (max-width: 900px) {
       .blog-hero, .blog-list, .article-body { padding-left: 1.5rem; padding-right: 1.5rem; }
     }
+
+    /* ══════════════ HİZMET SAYFALARI (/hizmetler/...) ══════════════ */
+    .svc-band { background: #F0EDE7; }
+    .svc-inner { max-width: 720px; margin: 0 auto; }
+    .svc-wide { max-width: 1000px; margin: 0 auto; }
+    .svc-wide h2 { margin-bottom: 1.8rem; }
+    .svc-inner > p { color: var(--light); font-size: 1rem; line-height: 1.85; margin-bottom: 1.2rem; }
+    .svc-inner > p strong { color: var(--navy); font-weight: 500; }
+    .svc-inner > p a { color: var(--gold); }
+    .svc-inner .about-text-p { margin-top: 1.5rem; }
+    .svc-wide .target-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; margin-bottom: 1rem; }
+    .callout-btn-wa { background: #1D6F42; color: #FFFFFF; }
+    .callout-btn-wa svg { width: 16px; height: 16px; fill: #FFFFFF; }
+    .blog-hero .blog-intro strong { color: var(--navy); font-weight: 500; }
