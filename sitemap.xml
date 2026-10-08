@@ -5,7 +5,7 @@
   <!-- Ana Sayfa -->
   <url>
     <loc>https://www.feyzagorgu.com.tr/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -85,9 +85,17 @@
   <!-- Blog: Assessment Development Center -->
   <url>
     <loc>https://www.feyzagorgu.com.tr/blog/assessment-development-center-nedir</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Hizmet: Assessment Center Koçluğu -->
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/hizmetler/assessment-center-koclugu</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
