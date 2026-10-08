@@ -786,6 +786,6 @@
     .svc-inner > p a { color: var(--gold); }
     .svc-inner .about-text-p { margin-top: 1.5rem; }
     .svc-wide .target-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; margin-bottom: 1rem; }
-    .callout-btn-wa { background: #1D6F42; color: #FFFFFF; }
-    .callout-btn-wa svg { width: 16px; height: 16px; fill: #FFFFFF; }
+    .callout-btn-wa { background: #25D366; color: #ffffff; }
+    .callout-btn-wa svg { width: 16px; height: 16px; fill: #ffffff; }
     .blog-hero .blog-intro strong { color: var(--navy); font-weight: 500; }
