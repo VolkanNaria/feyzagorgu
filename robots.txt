@@ -1,5 +1,46 @@
+# feyzagorgu.com.tr — tüm tarayıcılara açık (arama motorları ve yapay zekâ arama/yanıt botları dahil).
+# Türkçe (/) ve İngilizce (/en) sürümler dizine alınabilir.
+
 User-agent: *
 Allow: /
 
-# Sitemap
+# Yapay zekâ arama ve yanıt botları — açıkça izinli
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap (hreflang alternates dahil) ve LLM özeti
 Sitemap: https://www.feyzagorgu.com.tr/sitemap.xml
+# llms.txt: https://www.feyzagorgu.com.tr/llms.txt

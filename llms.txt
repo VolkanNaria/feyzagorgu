@@ -26,11 +26,26 @@ Feyza Görgü, PCC, ACPC, ATC; 25 yılı aşkın Finans ve İnsan Kaynakları de
 
 ## Sayfalar
 
-- [Ana Sayfa](https://www.feyzagorgu.com.tr)
+- [Ana Sayfa](https://www.feyzagorgu.com.tr) — Türkçe (varsayılan dil); İngilizce sürüm: [/en](https://www.feyzagorgu.com.tr/en)
 - [Assessment Center Koçluğu](https://www.feyzagorgu.com.tr/hizmetler/assessment-center-koclugu) — yönetici adayları için birebir koçluk, kurumlar için Assessment Center tasarımı ve danışmanlığı
 - [Kültür Dönüşümü SSS](https://www.feyzagorgu.com.tr/sss/kultur-donusumu)
 - [TURQUALITY® Danışmanlığı](https://www.feyzagorgu.com.tr/hizmetler/turquality-danismanligi) — TURQUALITY® programına hazırlanan şirketler için İK ve organizasyon danışmanlığı
 - [TURQUALITY® SSS](https://www.feyzagorgu.com.tr/sss/turquality)
+
+## English version (İngilizce sürüm)
+
+The whole site is also available in English under /en. Each English page is a one-to-one translation of its Turkish counterpart (hreflang pairs are declared in the pages and in sitemap.xml).
+
+- [Home](https://www.feyzagorgu.com.tr/en) — Feyza Görgü, PCC, ACPC, ATC: People, Culture and Leadership Transformation consultant, coach and mentor coach based in Istanbul, Türkiye
+- [Assessment Center Coaching](https://www.feyzagorgu.com.tr/en/services/assessment-center-coaching) — one-to-one coaching for managerial candidates, Assessment Center design and consulting for organizations
+- [TURQUALITY® Consulting](https://www.feyzagorgu.com.tr/en/services/turquality-consulting) — HR and organization consulting for companies preparing for the TURQUALITY® program
+- [Culture Transformation FAQ](https://www.feyzagorgu.com.tr/en/faq/culture-transformation)
+- [TURQUALITY® FAQ](https://www.feyzagorgu.com.tr/en/faq/turquality)
+- [Blog](https://www.feyzagorgu.com.tr/en/blog)
+- [What Is an Assessment & Development Center?](https://www.feyzagorgu.com.tr/en/blog/what-is-an-assessment-development-center)
+- [Human Resources Consulting for TURQUALITY®](https://www.feyzagorgu.com.tr/en/blog/turquality-hr-consulting)
+
+Credentials (English): ICF PCC (Professional Certified Coach), ACPC (Adler Certified Professional Coach), ATC (Adler Trained Coach); member of ICF and EMCC.
 
 ## İletişim
 

@@ -4,6 +4,20 @@
 // yapmak için sadece /partials/header.html veya /partials/footer.html
 // dosyasını güncellemek yeterli — tüm sayfalara otomatik yansır.
 (function () {
+  // Dil: <html lang="en"> ise İngilizce partial'lar (/partials/*.en.html) yüklenir
+  var IS_EN = (document.documentElement.lang || 'tr').toLowerCase().indexOf('en') === 0;
+  var L = IS_EN
+    ? { menuOpen: 'Open menu', menuClose: 'Close menu', suffix: '.en' }
+    : { menuOpen: 'Menüyü aç', menuClose: 'Menüyü kapat', suffix: '' };
+
+  // Dil seçici: karşı dilin <link rel="alternate" hreflang> adresine gider
+  function initLangSwitch() {
+    var a = document.getElementById('lang-switch');
+    if (!a) return;
+    var other = document.querySelector('link[rel="alternate"][hreflang="' + (IS_EN ? 'tr' : 'en') + '"]');
+    if (other && other.href) a.setAttribute('href', other.href);
+  }
+
   function loadPartial(elId, url, onLoaded) {
     var el = document.getElementById(elId);
     if (!el) return;
@@ -24,7 +38,7 @@
     toggle.addEventListener('click', function () {
       var isOpen = links.classList.toggle('nav-links-open');
       toggle.setAttribute('aria-expanded', isOpen);
-      toggle.setAttribute('aria-label', isOpen ? 'Menüyü kapat' : 'Menüyü aç');
+      toggle.setAttribute('aria-label', isOpen ? L.menuClose : L.menuOpen);
     });
 
     // Bir linke tıklanınca menüyü otomatik kapat
@@ -32,14 +46,14 @@
       a.addEventListener('click', function () {
         links.classList.remove('nav-links-open');
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Menüyü aç');
+        toggle.setAttribute('aria-label', L.menuOpen);
       });
     });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    loadPartial('site-header', '/partials/header.html', initNavToggle);
-    loadPartial('site-footer', '/partials/footer.html');
+    loadPartial('site-header', '/partials/header' + L.suffix + '.html', function () { initNavToggle(); initLangSwitch(); });
+    loadPartial('site-footer', '/partials/footer' + L.suffix + '.html');
   });
 })();
 
@@ -68,14 +82,14 @@ setTimeout(loadGA4, 5000);
 // ── GA4 EVENT TRACKING (ortak) ──
 document.addEventListener('DOMContentLoaded', function () {
   // Görüşme Talep Et
-  document.querySelectorAll('a[href="#iletisim"].btn-primary, a[href="/#iletisim"].btn-primary').forEach(function (el) {
+  document.querySelectorAll('a[href="#iletisim"].btn-primary, a[href="/#iletisim"].btn-primary, a[href="/en#iletisim"].btn-primary').forEach(function (el) {
     el.addEventListener('click', function () {
       gtag('event', 'gorusme_talep_et', { event_category: 'donusum', event_label: 'buton', value: 1 });
     });
   });
 
   // Hizmetleri İncele
-  document.querySelectorAll('a[href="#hizmetler"].btn-outline, a[href="/#hizmetler"].btn-outline').forEach(function (el) {
+  document.querySelectorAll('a[href="#hizmetler"].btn-outline, a[href="/#hizmetler"].btn-outline, a[href="/en#hizmetler"].btn-outline').forEach(function (el) {
     el.addEventListener('click', function () {
       gtag('event', 'hizmetleri_incele', { event_category: 'navigasyon', event_label: 'buton', value: 1 });
     });
