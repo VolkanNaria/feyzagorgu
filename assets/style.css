@@ -808,6 +808,10 @@
     .svc-inner > p a { color: var(--gold); }
     .svc-inner .about-text-p { margin-top: 1.5rem; }
     .svc-wide .target-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; margin-bottom: 1rem; }
+    .svc-list { margin: 1.2rem 0 0 1.2rem; color: var(--light); line-height: 1.9; font-size: 1rem; }
+    .svc-lead { color: var(--light); font-size: 1rem; line-height: 1.8; margin: -0.8rem 0 1.6rem; }
+    .svc-more { color: var(--gold); font-weight: 500; text-decoration: none; }
+    .svc-more:hover { text-decoration: underline; }
     .callout-btn-wa { background: #25D366; color: #ffffff; }
     .callout-btn-wa svg { width: 16px; height: 16px; fill: #ffffff; }
     .blog-hero .blog-intro strong { color: var(--navy); font-weight: 500; }

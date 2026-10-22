@@ -31,6 +31,8 @@ Feyza Görgü, PCC, ACPC, ATC; 25 yılı aşkın Finans ve İnsan Kaynakları de
 - [Kültür Dönüşümü SSS](https://www.feyzagorgu.com.tr/sss/kultur-donusumu)
 - [TURQUALITY® Danışmanlığı](https://www.feyzagorgu.com.tr/hizmetler/turquality-danismanligi) — TURQUALITY® programına hazırlanan şirketler için İK ve organizasyon danışmanlığı
 - [TURQUALITY® SSS](https://www.feyzagorgu.com.tr/sss/turquality)
+- [Eğitimler](https://www.feyzagorgu.com.tr/egitimler) — Narina Eğitim ve Danışmanlık adına Feyza Görgü tarafından verilen kurumsal eğitimler
+- [Finansçı Olmayanlar için Finans ve Veriyle Karar Verme](https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans) — yöneticiler için 2–3 günlük eğitim: veri okuma, temel istatistik, finans ve muhasebe, bütçe ve karlılık, vaka ile karar verme
 
 ## English version (İngilizce sürüm)
 
@@ -40,6 +42,8 @@ The whole site is also available in English under /en. Each English page is a on
 - [Assessment Center Coaching](https://www.feyzagorgu.com.tr/en/services/assessment-center-coaching) — one-to-one coaching for managerial candidates, Assessment Center design and consulting for organizations
 - [TURQUALITY® Consulting](https://www.feyzagorgu.com.tr/en/services/turquality-consulting) — HR and organization consulting for companies preparing for the TURQUALITY® program
 - [Culture Transformation FAQ](https://www.feyzagorgu.com.tr/en/faq/culture-transformation)
+- [Trainings](https://www.feyzagorgu.com.tr/en/trainings) — corporate trainings delivered by Feyza Görgü on behalf of Narina Eğitim ve Danışmanlık
+- [Finance and Data-Driven Decision Making for Non-Finance Managers](https://www.feyzagorgu.com.tr/en/trainings/finance-for-non-finance-managers) — a 2–3 day training for managers: reading data, basic statistics, finance and accounting, budgeting and profitability, case-based decision making
 - [TURQUALITY® FAQ](https://www.feyzagorgu.com.tr/en/faq/turquality)
 - [Blog](https://www.feyzagorgu.com.tr/en/blog)
 - [What Is an Assessment & Development Center?](https://www.feyzagorgu.com.tr/en/blog/what-is-an-assessment-development-center)

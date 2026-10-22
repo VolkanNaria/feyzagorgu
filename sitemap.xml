@@ -162,4 +162,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.feyzagorgu.com.tr/hizmetler/turquality-danismanligi" />
   </url>
 
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/egitimler</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.feyzagorgu.com.tr/egitimler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.feyzagorgu.com.tr/en/trainings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.feyzagorgu.com.tr/egitimler" />
+  </url>
+
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.feyzagorgu.com.tr/en/trainings/finance-for-non-finance-managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans" />
+  </url>
+
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/en/trainings</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.feyzagorgu.com.tr/egitimler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.feyzagorgu.com.tr/en/trainings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.feyzagorgu.com.tr/egitimler" />
+  </url>
+
+  <url>
+    <loc>https://www.feyzagorgu.com.tr/en/trainings/finance-for-non-finance-managers</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.feyzagorgu.com.tr/en/trainings/finance-for-non-finance-managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.feyzagorgu.com.tr/egitimler/finansci-olmayanlar-icin-finans" />
+  </url>
+
 </urlset>
